@@ -1,0 +1,62 @@
+CONSTRUCTORs :
+
+package constructor;
+class loan{
+	int rate;
+	loan(){
+		System.out.println("Hi, I am default constructor of loan ");
+	}
+	loan(int rate){
+		this.rate =rate ;
+	}
+	void printRate() {
+		System.out.println(this.rate);
+	}
+	
+}
+class carLoan extends loan{
+	int rate;
+	carLoan(){
+		System.out.println("Hi, I am a default constructor of carloan");
+		System.out.println(super.rate);
+		
+	}
+	carLoan(int rate){
+		super(7);
+		this.rate=rate;
+	}
+	
+}
+public class Constructors {
+
+	public static void main(String[] args) {
+carLoan cl2=new carLoan();
+carLoan cl = new carLoan(3);
+cl.printRate();
+	}
+
+}
+-------------------------------------------
+Final Keyword :
+
+package finalStudy;
+class A{
+	final int x=0;
+	final void fun() {
+		System.out.println("Can't override when accessibility is final");
+	}
+}
+//class B extends A{
+//	void fun() {
+//		------------error part------------
+//	}
+//}
+public class finalStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
