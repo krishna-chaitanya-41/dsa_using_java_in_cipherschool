@@ -1,0 +1,36 @@
+package loops;
+
+public class For_loop {
+
+	public static void main(String[] args) {
+		int i=5;
+
+FOR LOOP :
+^^^^^^^
+		for(i=5;i<14;i++) {
+			System.out.println(i);
+		}
+		System.out.println(++i);
+
+
+WHILE LOOP:
+^^^^^^^^^^
+
+		int n=0;
+		while(n<23) {
+			System.out.println(n);
+			n++;
+		}
+
+DO WHILE LOOP :
+^^^^^^^^^^^^
+		int k=3;
+		do {
+			System.out.println(k);
+			k++;
+		}
+		while(k<9);
+		
+	}
+
+}
