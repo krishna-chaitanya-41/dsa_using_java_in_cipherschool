@@ -91,5 +91,31 @@ public class if_else {
 
 }
 
+Switch Case :
+
+
+package Switch_Case;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		int a=0;
+		switch(a) {
+		case 1 :
+			System.out.println("Hi i am 1");
+			break;
+		case 2 :
+			System.out.println("Hi i am 2");
+			break;
+		case 3 :
+			System.out.println("Hi i am 3");
+			break;
+		default :
+			System.out.println("Hi i am default");
+		}
+
+	}
+
+}
 
 
