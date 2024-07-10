@@ -1,0 +1,62 @@
+INHERITANCE :
+
+package abstraction;
+interface Shape{
+	double pi=3.14;//public,static, final
+	double getSquare(double r);//public and abstract
+}
+class Circle implements Shape{
+	public double getSquare(double r) {
+		return r*r;
+	}
+	void fun() {
+		System.out.println("Hey, I implemented an interface named Shape");
+	}
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+Circle c = new Circle();
+System.out.println(c.getSquare(5));
+c.fun();
+	}
+
+}
+
+
+MULTIPLE INHERITANCE :
+
+package abstraction;
+interface G{
+	int x=10;
+	void fun();
+}
+interface B{
+	int x=20;
+	void fun();
+}
+class C implements G,B{//Multiple inheritance in Java
+	public void fun() {
+		System.out.println("Hello, I'm function in C");
+		System.out.println(G.x);//Ambiguous resolved using fully qualified name
+	}
+	
+}
+interface O extends G,B{//Multiple inheritance through interface
+	void fun();
+}
+class D implements O{
+	public void fun() {
+		System.out.println("Hello, I'm function in D");
+	}
+	
+}
+public class MultipleOngeritanceStudy {
+	public static void main(String[] args) {
+		C c = new C();
+		c.fun();
+		D d = new D();
+		d.fun();
+	}
+
+}
